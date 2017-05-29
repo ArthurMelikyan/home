@@ -1,6 +1,5 @@
 function isPrimeHome(num) {
- if (isNaN(num) || !isFinite(num) || num % 1 || num <2){
-     //եթե պարամետրը թիվ է , չի բաժանվում 1-ի վրա ու փոքր է 2-ից  ֆունկցիան կանգնեցնում ենք 
+ if (isNaN(num) || !isFinite(num) || num % 1 || num < 2){ 
      console.log("false");
       return false; 
  }
@@ -8,7 +7,7 @@ function isPrimeHome(num) {
      return (num ==2);
  }  
     
- var m = Math.sqrt(num); // կլորացնում ենք թիվը
+ var m = Math.sqrt(num); 
  for (var i = 5; i <= m; i += 6) {
   if (num % i == 0){
       console.log("false");
@@ -23,3 +22,7 @@ function isPrimeHome(num) {
  return true;
 }
  isPrimeHome(15);
+ isPrimeHome(11);
+ isPrimeHome("blabla");
+ isPrimeHome(1.25);
+ isPrimeHome(1);
