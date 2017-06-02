@@ -14,9 +14,9 @@ function factorial(number) {
     }
     return number * factorial(number - 1);
 }
+console.log(factorial(1 , 1 ,2));
 console.log(factorial(0));
 console.log(factorial(4));
 console.log(factorial(2));
 console.log(factorial(8));
 console.log(factorial(0.5));
-console.log(factorial());

@@ -39,24 +39,24 @@ DbLinkedList.prototype.add =  function (data) {
       
 }
 
-DbLinkedList.prototype.remove = function (item) {
+DbLinkedList.prototype.remove = function (elem) {
      
-         if (item > -1 && item < this.len){
+         if (elem > -1 && elem < this.len){
 
             var currentPosition = this.head, i = 0; 
-            if (item === 0){
+            if (elem === 0){
                 this.head = currentPosition.next;
                 if (!this.head){
                     this.tail = null;
                 } else {
                     this.head.previus = null;
                 } 
-            } else if (item === this.len -1){
+            } else if (elem === this.len -1){
                 currentPosition = this.tail;
                 this.tail = currentPosition.previus;
                 this.tail.next = null;
             } else { 
-                while(i++ < item){
+                while(i++ < elem){
                     currentPosition = currentPosition.next;
                 }
          currentPosition.previus.next = currentPosition.next;
@@ -87,4 +87,4 @@ console.log(list);
 var removeTest2 = new DbLinkedList();
 removeTest2.add("sa jnjvelu e" , removeTest2);
 console.log(".... -> " , removeTest2);
-removeTest2.remove(removeTest2);
+// removeTest2.remove(removeTest2);
