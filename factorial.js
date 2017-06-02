@@ -4,7 +4,7 @@ function factorial(number) {
         return false;
     } else if (factorial.arguments.length == 0) {
         console.log("please add parameter on call");
-        return false;
+         return false;
     }
     if (number === 0) {
         return 1;
@@ -14,7 +14,7 @@ function factorial(number) {
     }
     return number * factorial(number - 1);
 }
-console.log(factorial(1 , 1 ,2));
+console.log(factorial(1, 1, 2));
 console.log(factorial(0));
 console.log(factorial(4));
 console.log(factorial(2));
