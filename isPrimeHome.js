@@ -1,6 +1,6 @@
 function isPrimeHome(num) {
     if ( isPrimeHome.cache[ num ] != null ) {
-    return isPrimeHome.cache[ num ]; 
+     return isPrimeHome.cache[ num ]; 
     }
  if (isNaN(num) || !isFinite(num) || num % 1 || num < 2){ 
      console.log("false");
